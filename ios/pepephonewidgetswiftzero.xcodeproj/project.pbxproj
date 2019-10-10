@@ -37,6 +37,10 @@
 		2DCD954D1E0B4F2C00145EB5 /* pepephonewidgetswiftzeroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pepephonewidgetswiftzeroTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		ACCF601C234F692C005B504D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF601B234F692C005B504D /* NotificationCenter.framework */; };
+		ACCF6020234F692C005B504D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCF601F234F692C005B504D /* TodayViewController.m */; };
+		ACCF6023234F692C005B504D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6021234F692C005B504D /* MainInterface.storyboard */; };
+		ACCF6027234F692C005B504D /* TodayExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACCF601A234F692C005B504D /* TodayExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
@@ -309,6 +313,13 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
+		ACCF6025234F692C005B504D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCF6019234F692C005B504D;
+			remoteInfo = TodayExt;
+		};
 		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -317,6 +328,20 @@
 			remoteInfo = RCTBlob;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACCF6028234F692C005B504D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACCF6027234F692C005B504D /* TodayExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -344,6 +369,12 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		ACCF601A234F692C005B504D /* TodayExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF601B234F692C005B504D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		ACCF601E234F692C005B504D /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		ACCF601F234F692C005B504D /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		ACCF6022234F692C005B504D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		ACCF6024234F692C005B504D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -399,6 +430,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF6017234F692C005B504D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF601C234F692C005B504D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +566,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				ACCF601B234F692C005B504D /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -583,6 +623,7 @@
 				13B07FAE1A68108700A75B9A /* pepephonewidgetswiftzero */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* pepephonewidgetswiftzeroTests */,
+				ACCF601D234F692C005B504D /* TodayExt */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 			);
@@ -598,8 +639,20 @@
 				00E356EE1AD99517003FC87E /* pepephonewidgetswiftzeroTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOSTests.xctest */,
+				ACCF601A234F692C005B504D /* TodayExt.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ACCF601D234F692C005B504D /* TodayExt */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF601E234F692C005B504D /* TodayViewController.h */,
+				ACCF601F234F692C005B504D /* TodayViewController.m */,
+				ACCF6021234F692C005B504D /* MainInterface.storyboard */,
+				ACCF6024234F692C005B504D /* Info.plist */,
+			);
+			path = TodayExt;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -640,10 +693,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				ACCF6028234F692C005B504D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACCF6026234F692C005B504D /* PBXTargetDependency */,
 			);
 			name = pepephonewidgetswiftzero;
 			productName = "Hello World";
@@ -686,6 +741,23 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		ACCF6019234F692C005B504D /* TodayExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCF6050234F692C005B504D /* Build configuration list for PBXNativeTarget "TodayExt" */;
+			buildPhases = (
+				ACCF6016234F692C005B504D /* Sources */,
+				ACCF6017234F692C005B504D /* Frameworks */,
+				ACCF6018234F692C005B504D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExt;
+			productName = TodayExt;
+			productReference = ACCF601A234F692C005B504D /* TodayExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -713,6 +785,11 @@
 						DevelopmentTeam = X4G5LFRSN5;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					ACCF6019234F692C005B504D = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = X4G5LFRSN5;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -784,6 +861,7 @@
 				00E356ED1AD99517003FC87E /* pepephonewidgetswiftzeroTests */,
 				2D02E47A1E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOSTests */,
+				ACCF6019234F692C005B504D /* TodayExt */,
 			);
 		};
 /* End PBXProject section */
@@ -1082,6 +1160,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACCF6018234F692C005B504D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF6023234F692C005B504D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1150,6 +1236,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACCF6016234F692C005B504D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF6020234F692C005B504D /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1163,6 +1257,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		ACCF6026234F692C005B504D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACCF6019234F692C005B504D /* TodayExt */;
+			targetProxy = ACCF6025234F692C005B504D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1173,6 +1272,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = pepephonewidgetswiftzero;
+			sourceTree = "<group>";
+		};
+		ACCF6021234F692C005B504D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCF6022234F692C005B504D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1463,6 +1570,56 @@
 			};
 			name = Release;
 		};
+		ACCF6029234F692C005B504D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X4G5LFRSN5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodayExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.pepephonewidgetswiftzero.TodayExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACCF602A234F692C005B504D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X4G5LFRSN5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodayExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.pepephonewidgetswiftzero.TodayExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1507,6 +1664,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCF6050234F692C005B504D /* Build configuration list for PBXNativeTarget "TodayExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCF6029234F692C005B504D /* Debug */,
+				ACCF602A234F692C005B504D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
