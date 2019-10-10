@@ -41,6 +41,10 @@
 		ACCF6020234F692C005B504D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCF601F234F692C005B504D /* TodayViewController.m */; };
 		ACCF6023234F692C005B504D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6021234F692C005B504D /* MainInterface.storyboard */; };
 		ACCF6027234F692C005B504D /* TodayExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACCF601A234F692C005B504D /* TodayExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACCF6062234F7255005B504D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF601B234F692C005B504D /* NotificationCenter.framework */; };
+		ACCF6065234F7255005B504D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6064234F7255005B504D /* TodayViewController.swift */; };
+		ACCF6068234F7255005B504D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6066234F7255005B504D /* MainInterface.storyboard */; };
+		ACCF606C234F7255005B504D /* TodaySwiftExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACCF6061234F7255005B504D /* TodaySwiftExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
@@ -320,6 +324,13 @@
 			remoteGlobalIDString = ACCF6019234F692C005B504D;
 			remoteInfo = TodayExt;
 		};
+		ACCF606A234F7255005B504D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCF6060234F7255005B504D;
+			remoteInfo = TodaySwiftExt;
+		};
 		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -336,6 +347,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				ACCF606C234F7255005B504D /* TodaySwiftExt.appex in Embed App Extensions */,
 				ACCF6027234F692C005B504D /* TodayExt.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -375,6 +387,10 @@
 		ACCF601F234F692C005B504D /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		ACCF6022234F692C005B504D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		ACCF6024234F692C005B504D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCF6061234F7255005B504D /* TodaySwiftExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodaySwiftExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF6064234F7255005B504D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		ACCF6067234F7255005B504D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		ACCF6069234F7255005B504D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -438,6 +454,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACCF601C234F692C005B504D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF605E234F7255005B504D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF6062234F7255005B504D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +648,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* pepephonewidgetswiftzeroTests */,
 				ACCF601D234F692C005B504D /* TodayExt */,
+				ACCF6063234F7255005B504D /* TodaySwiftExt */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 			);
@@ -640,6 +665,7 @@
 				2D02E47B1E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOSTests.xctest */,
 				ACCF601A234F692C005B504D /* TodayExt.appex */,
+				ACCF6061234F7255005B504D /* TodaySwiftExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -653,6 +679,16 @@
 				ACCF6024234F692C005B504D /* Info.plist */,
 			);
 			path = TodayExt;
+			sourceTree = "<group>";
+		};
+		ACCF6063234F7255005B504D /* TodaySwiftExt */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF6064234F7255005B504D /* TodayViewController.swift */,
+				ACCF6066234F7255005B504D /* MainInterface.storyboard */,
+				ACCF6069234F7255005B504D /* Info.plist */,
+			);
+			path = TodaySwiftExt;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -699,6 +735,7 @@
 			);
 			dependencies = (
 				ACCF6026234F692C005B504D /* PBXTargetDependency */,
+				ACCF606B234F7255005B504D /* PBXTargetDependency */,
 			);
 			name = pepephonewidgetswiftzero;
 			productName = "Hello World";
@@ -758,12 +795,30 @@
 			productReference = ACCF601A234F692C005B504D /* TodayExt.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		ACCF6060234F7255005B504D /* TodaySwiftExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCF6094234F7255005B504D /* Build configuration list for PBXNativeTarget "TodaySwiftExt" */;
+			buildPhases = (
+				ACCF605D234F7255005B504D /* Sources */,
+				ACCF605E234F7255005B504D /* Frameworks */,
+				ACCF605F234F7255005B504D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodaySwiftExt;
+			productName = TodaySwiftExt;
+			productReference = ACCF6061234F7255005B504D /* TodaySwiftExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -787,6 +842,11 @@
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
 					ACCF6019234F692C005B504D = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = X4G5LFRSN5;
+						ProvisioningStyle = Automatic;
+					};
+					ACCF6060234F7255005B504D = {
 						CreatedOnToolsVersion = 11.0;
 						DevelopmentTeam = X4G5LFRSN5;
 						ProvisioningStyle = Automatic;
@@ -862,6 +922,7 @@
 				2D02E47A1E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* pepephonewidgetswiftzero-tvOSTests */,
 				ACCF6019234F692C005B504D /* TodayExt */,
+				ACCF6060234F7255005B504D /* TodaySwiftExt */,
 			);
 		};
 /* End PBXProject section */
@@ -1168,6 +1229,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACCF605F234F7255005B504D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF6068234F7255005B504D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1244,6 +1313,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACCF605D234F7255005B504D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF6065234F7255005B504D /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1262,6 +1339,11 @@
 			target = ACCF6019234F692C005B504D /* TodayExt */;
 			targetProxy = ACCF6025234F692C005B504D /* PBXContainerItemProxy */;
 		};
+		ACCF606B234F7255005B504D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACCF6060234F7255005B504D /* TodaySwiftExt */;
+			targetProxy = ACCF606A234F7255005B504D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1278,6 +1360,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				ACCF6022234F692C005B504D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		ACCF6066234F7255005B504D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCF6067234F7255005B504D /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1329,6 +1419,7 @@
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1349,6 +1440,7 @@
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X4G5LFRSN5;
@@ -1620,6 +1712,61 @@
 			};
 			name = Release;
 		};
+		ACCF606D234F7255005B504D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X4G5LFRSN5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodaySwiftExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.pepephonewidgetswiftzero.TodaySwiftExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACCF606E234F7255005B504D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X4G5LFRSN5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodaySwiftExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.pepephonewidgetswiftzero.TodaySwiftExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1673,6 +1820,15 @@
 			buildConfigurations = (
 				ACCF6029234F692C005B504D /* Debug */,
 				ACCF602A234F692C005B504D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCF6094234F7255005B504D /* Build configuration list for PBXNativeTarget "TodaySwiftExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCF606D234F7255005B504D /* Debug */,
+				ACCF606E234F7255005B504D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
