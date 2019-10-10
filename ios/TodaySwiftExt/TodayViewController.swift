@@ -9,7 +9,34 @@
 import UIKit
 import NotificationCenter
 
+/*class myView: UIView {
+  func prepare() {
+      backgroundColor = UIColor.blueColor()
+  }
+
+  override func drawRect(rect: CGRect) {
+  // custom stuff
+  }
+}*/
+
+class MyView: MacawView {
+
+  required init?(coder aDecoder: NSCoder) {
+    let text = Text(text: "Hello, World!", place: .move(dx: 0, dy: 0))
+    super.init(node: text, coder: aDecoder)
+  }
+
+}
+
 class TodayViewController: UIViewController, NCWidgetProviding {
+  
+ override func loadView()
+  {
+    let viewPlaying = TotalOfStepsView()
+      view = viewPlaying
+    viewPlaying.play()
+    self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
+  }
         
     override func viewDidLoad() {
         super.viewDidLoad()
