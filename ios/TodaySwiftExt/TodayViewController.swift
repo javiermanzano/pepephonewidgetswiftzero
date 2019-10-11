@@ -9,22 +9,29 @@
 import UIKit
 import NotificationCenter
 
+
+var fullPathURL = ""
+var content = ""
+
 class MyView: MacawView {
+  
 
   open func play() {
     /*let text = Text(text: "Hello, World!", place: .move(dx: 0, dy: 0))
     super.init(node: text, coder: aDecoder)*/
     do {
-      self.node = try SVGParser.parse(path: "camera")
+      print("-->> content: \(content)")
+      self.node = try SVGParser.parse(text: content)
     } catch {
-      let text = Text(text: "Hello, World!", place: .move(dx: 0, dy: 0))
+      print("-->> Error info: \(error)")
+      let text = Text(text: "There was an error! What a surprise", place: .move(dx: 0, dy: 0))
       self.node = text
     }
   }
 
 }
 
-let file = "readit"
+let file = "readit.svg"
 let text = "<g id=\"usage/progress/icon/data\" transform=\"translate(17.000000, 18.000000)\">" +
 "   <g id=\"ic_data-consume\">" +
 "      <path d=\"M16,17.01 L16,10 L14,10 L14,17.01 L11,17.01 L15,21 L19,17.01 L16,17.01 L16,17.01 Z M9,3 L5,6.99 L8,6.99 L8,14 L10,14 L10,6.99 L13,6.99 L9,3 Z\" id=\"Shape\" fill=\"#737373\" fill-rule=\"nonzero\"></path>" +
@@ -35,6 +42,7 @@ let text = "<g id=\"usage/progress/icon/data\" transform=\"translate(17.000000, 
 func writeToFile() {
   if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
       let fileURL = dir.appendingPathComponent(file)
+    fullPathURL = fileURL.absoluteString.replacingOccurrences(of: ".svg", with: "", options: .literal, range: nil)
       do {
           try text.write(to: fileURL, atomically: false, encoding: .utf8)
       }
@@ -43,19 +51,35 @@ func writeToFile() {
           let text2 = try String(contentsOf: fileURL, encoding: .utf8)
           NSLog("-->> %@", text2)
       }
-      catch {/* error handling here */}
+      catch {
+        print("-->> Error info SVG (1): \(error)")
+      }
+    }
   }
-}
 
+
+func writeSVGContent() {
+  if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+    let path = Bundle.main.path(forResource: "camera", ofType: "svg")
+    do {
+      content = try String(contentsOf: URL(fileURLWithPath: path ?? ""), encoding: .utf8)
+    } catch {
+      print("-->> Error info SVG (2): \(error)")
+    }
+  }
+  
+}
+ 
 class TodayViewController: UIViewController, NCWidgetProviding {
   
     override func loadView() {
+      writeToFile()
+      writeSVGContent()
       let customView = MyView()
       view = customView
       customView.play()
       view.backgroundColor = UIColor.white
       self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
-      writeToFile()
     }
         
     override func viewDidLoad() {
