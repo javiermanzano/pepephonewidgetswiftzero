@@ -48,21 +48,6 @@
 		ACCF6098234F736C005B504D /* EmptyBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6097234F736C005B504D /* EmptyBridge.swift */; };
 		ACCF6099234F736C005B504D /* EmptyBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6097234F736C005B504D /* EmptyBridge.swift */; };
 		ACCF609A234F736C005B504D /* EmptyBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6097234F736C005B504D /* EmptyBridge.swift */; };
-		ACCF6804234F7955005B504D /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6237234F7953005B504D /* Cartfile.resolved */; };
-		ACCF6805234F7955005B504D /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6237234F7953005B504D /* Cartfile.resolved */; };
-		ACCF6806234F7955005B504D /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6237234F7953005B504D /* Cartfile.resolved */; };
-		ACCF6807234F7955005B504D /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6238234F7953005B504D /* .swift-version */; };
-		ACCF6808234F7955005B504D /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6238234F7953005B504D /* .swift-version */; };
-		ACCF6809234F7955005B504D /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6238234F7953005B504D /* .swift-version */; };
-		ACCF680A234F7955005B504D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6239234F7953005B504D /* LICENSE */; };
-		ACCF680B234F7955005B504D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6239234F7953005B504D /* LICENSE */; };
-		ACCF680C234F7955005B504D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6239234F7953005B504D /* LICENSE */; };
-		ACCF6843234F7955005B504D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = ACCF625C234F7953005B504D /* .swiftlint.yml */; };
-		ACCF6844234F7955005B504D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = ACCF625C234F7953005B504D /* .swiftlint.yml */; };
-		ACCF6845234F7955005B504D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = ACCF625C234F7953005B504D /* .swiftlint.yml */; };
-		ACCF6846234F7955005B504D /* macaw-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = ACCF625D234F7953005B504D /* macaw-logo.svg */; };
-		ACCF6847234F7955005B504D /* macaw-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = ACCF625D234F7953005B504D /* macaw-logo.svg */; };
-		ACCF6848234F7955005B504D /* macaw-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = ACCF625D234F7953005B504D /* macaw-logo.svg */; };
 		ACCF6888234F7955005B504D /* CSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6287234F7953005B504D /* CSSParser.swift */; };
 		ACCF6889234F7955005B504D /* CSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6287234F7953005B504D /* CSSParser.swift */; };
 		ACCF688A234F7955005B504D /* CSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6287234F7953005B504D /* CSSParser.swift */; };
@@ -483,6 +468,9 @@
 		ACCF6A89234F89CE005B504D /* Bars.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6A88234F89CE005B504D /* Bars.swift */; };
 		ACCF6A8A234F89CE005B504D /* Bars.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6A88234F89CE005B504D /* Bars.swift */; };
 		ACCF6A8B234F89CE005B504D /* Bars.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF6A88234F89CE005B504D /* Bars.swift */; };
+		ACCF6AC82350741A005B504D /* camera.svg in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6AC723507419005B504D /* camera.svg */; };
+		ACCF6AC92350741A005B504D /* camera.svg in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6AC723507419005B504D /* camera.svg */; };
+		ACCF6ACA2350741A005B504D /* camera.svg in Resources */ = {isa = PBXBuildFile; fileRef = ACCF6AC723507419005B504D /* camera.svg */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
@@ -832,11 +820,6 @@
 		ACCF6095234F736C005B504D /* pepephonewidgetswiftzero-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pepephonewidgetswiftzero-Bridging-Header.h"; sourceTree = "<group>"; };
 		ACCF6096234F736C005B504D /* TodayExt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodayExt-Bridging-Header.h"; sourceTree = "<group>"; };
 		ACCF6097234F736C005B504D /* EmptyBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBridge.swift; sourceTree = "<group>"; };
-		ACCF6237234F7953005B504D /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
-		ACCF6238234F7953005B504D /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
-		ACCF6239234F7953005B504D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		ACCF625C234F7953005B504D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		ACCF625D234F7953005B504D /* macaw-logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "macaw-logo.svg"; sourceTree = "<group>"; };
 		ACCF6287234F7953005B504D /* CSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSParser.swift; sourceTree = "<group>"; };
 		ACCF6288234F7953005B504D /* SVGNodeLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGNodeLayout.swift; sourceTree = "<group>"; };
 		ACCF6289234F7953005B504D /* SVGParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGParserError.swift; sourceTree = "<group>"; };
@@ -977,6 +960,7 @@
 		ACCF6325234F7953005B504D /* NSTimer+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+Closure.swift"; sourceTree = "<group>"; };
 		ACCF632A234F7953005B504D /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
 		ACCF6A88234F89CE005B504D /* Bars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bars.swift; sourceTree = "<group>"; };
+		ACCF6AC723507419005B504D /* camera.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = camera.svg; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -1276,6 +1260,7 @@
 			children = (
 				ACCF6064234F7255005B504D /* TodayViewController.swift */,
 				ACCF6066234F7255005B504D /* MainInterface.storyboard */,
+				ACCF6AC723507419005B504D /* camera.svg */,
 				ACCF6069234F7255005B504D /* Info.plist */,
 				ACCF6A88234F89CE005B504D /* Bars.swift */,
 			);
@@ -1285,11 +1270,6 @@
 		ACCF609B234F7952005B504D /* Macaw */ = {
 			isa = PBXGroup;
 			children = (
-				ACCF6237234F7953005B504D /* Cartfile.resolved */,
-				ACCF6238234F7953005B504D /* .swift-version */,
-				ACCF6239234F7953005B504D /* LICENSE */,
-				ACCF625C234F7953005B504D /* .swiftlint.yml */,
-				ACCF625D234F7953005B504D /* macaw-logo.svg */,
 				ACCF6285234F7953005B504D /* Source */,
 			);
 			path = Macaw;
@@ -2129,13 +2109,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACCF6807234F7955005B504D /* .swift-version in Resources */,
-				ACCF6846234F7955005B504D /* macaw-logo.svg in Resources */,
+				ACCF6AC82350741A005B504D /* camera.svg in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				ACCF680A234F7955005B504D /* LICENSE in Resources */,
-				ACCF6843234F7955005B504D /* .swiftlint.yml in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				ACCF6804234F7955005B504D /* Cartfile.resolved in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2158,12 +2134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACCF6844234F7955005B504D /* .swiftlint.yml in Resources */,
-				ACCF6847234F7955005B504D /* macaw-logo.svg in Resources */,
-				ACCF6805234F7955005B504D /* Cartfile.resolved in Resources */,
-				ACCF6808234F7955005B504D /* .swift-version in Resources */,
+				ACCF6AC92350741A005B504D /* camera.svg in Resources */,
 				ACCF6023234F692C005B504D /* MainInterface.storyboard in Resources */,
-				ACCF680B234F7955005B504D /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2171,12 +2143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACCF6845234F7955005B504D /* .swiftlint.yml in Resources */,
-				ACCF6848234F7955005B504D /* macaw-logo.svg in Resources */,
-				ACCF6806234F7955005B504D /* Cartfile.resolved in Resources */,
-				ACCF6809234F7955005B504D /* .swift-version in Resources */,
+				ACCF6ACA2350741A005B504D /* camera.svg in Resources */,
 				ACCF6068234F7255005B504D /* MainInterface.storyboard in Resources */,
-				ACCF680C234F7955005B504D /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
